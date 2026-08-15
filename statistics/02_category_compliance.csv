@@ -1,0 +1,9 @@
+﻿category,total_events,compliant_events,violating_events
+MaxSpdlim,1314,562,752
+MinSpdlim,408,295,113
+FollowDis,581,69,512
+LateralDis,1263,1211,52
+LaneChange,806,703,103
+ContinueLaneChange,97,74,23
+RoadMarking,652,507,145
+Overtake,52,34,18

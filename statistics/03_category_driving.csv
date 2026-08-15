@@ -1,0 +1,9 @@
+﻿category,total_events,autonomous_events,manual_events
+MaxSpdlim,1314,283,1031
+MinSpdlim,408,326,82
+FollowDis,581,478,103
+LateralDis,1263,903,360
+LaneChange,806,545,261
+ContinueLaneChange,97,43,54
+RoadMarking,652,401,251
+Overtake,52,19,33

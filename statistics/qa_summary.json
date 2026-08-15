@@ -1,0 +1,201 @@
+{
+  "discovered_event_directories": 5174,
+  "loaded_json_records": 5173,
+  "article_event_pairs": 5470,
+  "event_directories_without_record_json": [
+    {
+      "event_dir": "Dataset/Changchun_valid/03_FollowDis/D-6.0-PP16-20241015_103620_289-20241015_104120_362_CSV/event_01",
+      "error": "No record.json matched the known naming conventions"
+    }
+  ],
+  "json_parse_or_read_errors": [],
+  "raw_driving_mode_counts": {
+    "Manual Driving": 2175,
+    "Autonomous Driving": 2998
+  },
+  "raw_event_compliance_counts": {
+    "Violation": 1718,
+    "Compliance": 3455
+  },
+  "raw_article_status_counts": {
+    "Compliance": 3656,
+    "Compliance→Violation": 830,
+    "Violation": 432,
+    "Violation→Compliance": 497,
+    "Violation→Compliance→Violation": 1,
+    "Compliance→Violation→Compliance": 3,
+    "compliance_to_violation": 34,
+    "Compliance→Violation→Compliance→Violation": 1,
+    "Compliance→Violation→Compliance→Violation→Compliance→Violation→Compliance→Violation→Compliance→Violation→Compliance": 1,
+    "Violation→Compliance→Violation→Compliance": 1,
+    "violation_to_compliance": 14
+  },
+  "unknown_driving_records": 0,
+  "unknown_event_compliance_records": 0,
+  "empty_article_status_records": 0,
+  "empty_reported_article_ids": [],
+  "article_ids_missing_status": [],
+  "extra_article_status_ids": [
+    {
+      "path": "Dataset/Changchun_valid/08_Overtake/D-6.0-PP16-20240921_154138_688-20240921_154638_685_CSV/event_01/Overtake_event_1_record.json",
+      "extra_status_ids": "IMR_82.5;TSL_43.6;TSL_43.8"
+    },
+    {
+      "path": "Dataset/Changchun_valid/08_Overtake/D-6.0-PP16-20240927_152157_268-20240927_152657_609_CSV/event_01/Overtake_event_1_record.json",
+      "extra_status_ids": "IMR_82.5;TSL_43.6;TSL_43.8"
+    },
+    {
+      "path": "Dataset/Changchun_valid/08_Overtake/D-6.0-PP16-20240929_142548_169-20240929_143048_185_CSV/event_01/Overtake_event_1_record.json",
+      "extra_status_ids": "IMR_82.5;TSL_43.6;TSL_43.8"
+    },
+    {
+      "path": "Dataset/Changchun_valid/08_Overtake/D-6.0-PP16-20241014_144845_795-20241014_145345_791_CSV/event_01/Overtake_event_1_record.json",
+      "extra_status_ids": "IMR_82.5;TSL_43.6;TSL_43.8"
+    },
+    {
+      "path": "Dataset/Changchun_valid/08_Overtake/D-6.0-PP16-20241014_155345_791-20241014_155845_794_CSV/event_01/Overtake_event_1_record.json",
+      "extra_status_ids": "IMR_82.5;TSL_43.6;TSL_43.8"
+    },
+    {
+      "path": "Dataset/Nanjing_valid/08_Overtake/D-6.0-22-20240910_143638_678-20240910_144138_761_CSV/event_01/Overtake_event_1_record.json",
+      "extra_status_ids": "IMR_82.5;TSL_43.6;TSL_43.8"
+    },
+    {
+      "path": "Dataset/Nanjing_valid/08_Overtake/D-6.0-22-20240910_151138_747-20240910_151638_768_CSV/event_01/Overtake_event_1_record.json",
+      "extra_status_ids": "IMR_82.5;TSL_43.6;TSL_43.8"
+    },
+    {
+      "path": "Dataset/Nanjing_valid/08_Overtake/D-6.0-22-20240925_160034_269-20240925_160534_256_CSV/event_01/Overtake_event_1_record.json",
+      "extra_status_ids": "IMR_82.5;TSL_43.6;TSL_43.8"
+    },
+    {
+      "path": "Dataset/Nanjing_valid/08_Overtake/D-6.0-22-20240925_160034_269-20240925_160534_256_CSV/event_02/Overtake_event_2_record.json",
+      "extra_status_ids": "IMR_82.5;TSL_43.6;TSL_43.8"
+    },
+    {
+      "path": "Dataset/Nanjing_valid/08_Overtake/D-6.0-22-20240929_143355_182-20240929_143527_224_CSV/event_01/Overtake_event_1_record.json",
+      "extra_status_ids": "IMR_82.5;TSL_43.6;TSL_43.8"
+    },
+    {
+      "path": "Dataset/Nanjing_valid/08_Overtake/D-6.0-22-20240930_105634_290-20240930_110134_260_CSV/event_01/Overtake_event_1_record.json",
+      "extra_status_ids": "IMR_82.5;TSL_43.6;TSL_43.8"
+    },
+    {
+      "path": "Dataset/Nanjing_valid/08_Overtake/D-6.0-22-20241015_105211_129-20241015_105711_142_CSV/event_01/Overtake_event_1_record.json",
+      "extra_status_ids": "TSL_43.6;TSL_43.8"
+    },
+    {
+      "path": "Dataset/Nanjing_valid/08_Overtake/D-6.0-27-20241014_154401_720-20241014_154901_710_CSV/event_01/Overtake_event_1_record.json",
+      "extra_status_ids": "IMR_82.5;TSL_43.6;TSL_43.8"
+    },
+    {
+      "path": "Dataset/Nanjing_valid/08_Overtake/D-6.0-28-20240927_104620_030-20240927_105120_071_CSV/event_01/Overtake_event_1_record.json",
+      "extra_status_ids": "IMR_82.5;TSL_43.6;TSL_43.8"
+    },
+    {
+      "path": "Dataset/Nanjing_valid/08_Overtake/D-6.0-28-20240930_155448_639-20240930_155948_650_CSV/event_01/Overtake_event_1_record.json",
+      "extra_status_ids": "TSL_43.6;TSL_43.8"
+    },
+    {
+      "path": "Dataset/Nanjing_valid/08_Overtake/D-6.0-31-20241021_160057_757-20241021_160557_780_CSV/event_01/Overtake_event_1_record.json",
+      "extra_status_ids": "TSL_43.6;TSL_43.8"
+    },
+    {
+      "path": "Dataset/Nanjing_valid/08_Overtake/D-6.0-31-20241021_160057_757-20241021_160557_780_CSV/event_02/Overtake_event_2_record.json",
+      "extra_status_ids": "IMR_82.5;TSL_43.6;TSL_43.8"
+    },
+    {
+      "path": "Dataset/Nanjing_valid/08_Overtake/D-6.0-31-20241021_160057_757-20241021_160557_780_CSV/event_03/Overtake_event_3_record.json",
+      "extra_status_ids": "IMR_82.5;TSL_43.6;TSL_43.8"
+    },
+    {
+      "path": "Dataset/Nanjing_valid/08_Overtake/D-6.0-31-20241021_161244_805-20241021_161744_900_CSV/event_01/Overtake_event_1_record.json",
+      "extra_status_ids": "IMR_82.5;TSL_43.6;TSL_43.8"
+    },
+    {
+      "path": "Dataset/Nanjing_valid/08_Overtake/D-6.0-31-20241022_150014_730-20241022_150514_745_CSV/event_01/Overtake_event_1_record.json",
+      "extra_status_ids": "IMR_82.5;TSL_43.6;TSL_43.8"
+    },
+    {
+      "path": "Dataset/Nanjing_valid/08_Overtake/D-6.0-31-20241023_091700_647-20241023_092200_655_CSV/event_01/Overtake_event_1_record.json",
+      "extra_status_ids": "TSL_43.6;TSL_43.8"
+    },
+    {
+      "path": "Dataset/Nanjing_valid/08_Overtake/D-6.0-31-20241023_092200_655-20241023_092700_649_CSV/event_01/Overtake_event_1_record.json",
+      "extra_status_ids": "IMR_82.5;TSL_43.6;TSL_43.8"
+    },
+    {
+      "path": "Dataset/Nanjing_valid/08_Overtake/D-6.0-31-20241023_092700_649-20241023_093200_661_CSV/event_01/Overtake_event_1_record.json",
+      "extra_status_ids": "IMR_82.5;TSL_43.6;TSL_43.8"
+    },
+    {
+      "path": "Dataset/Nanjing_valid/08_Overtake/D-6.0-31-20241023_092700_649-20241023_093200_661_CSV/event_02/Overtake_event_2_record.json",
+      "extra_status_ids": "IMR_82.5;TSL_43.6;TSL_43.8"
+    },
+    {
+      "path": "Dataset/Nanjing_valid/08_Overtake/D-6.0-31-20241023_093700_685-20241023_094200_692_CSV/event_01/Overtake_event_1_record.json",
+      "extra_status_ids": "IMR_82.5;TSL_43.6;TSL_43.8"
+    },
+    {
+      "path": "Dataset/Nanjing_valid/08_Overtake/D-6.0-31-20241023_093700_685-20241023_094200_692_CSV/event_02/Overtake_event_2_record.json",
+      "extra_status_ids": "IMR_82.5;TSL_43.6;TSL_43.8"
+    },
+    {
+      "path": "Dataset/Nanjing_valid/08_Overtake/D-6.0-31-20241023_093700_685-20241023_094200_692_CSV/event_03/Overtake_event_3_record.json",
+      "extra_status_ids": "IMR_82.5;TSL_43.6;TSL_43.8"
+    },
+    {
+      "path": "Dataset/Nanjing_valid/08_Overtake/D-6.0-31-20241023_093700_685-20241023_094200_692_CSV/event_04/Overtake_event_4_record.json",
+      "extra_status_ids": "IMR_82.5;TSL_43.6;TSL_43.8"
+    },
+    {
+      "path": "Dataset/Nanjing_valid/08_Overtake/D-6.0-31-20241023_093700_685-20241023_094200_692_CSV/event_05/Overtake_event_5_record.json",
+      "extra_status_ids": "IMR_82.5;TSL_43.6;TSL_43.8"
+    },
+    {
+      "path": "Dataset/Nanjing_valid/08_Overtake/D-6.0-31-20241023_094200_692-20241023_094700_700_CSV/event_01/Overtake_event_1_record.json",
+      "extra_status_ids": "IMR_82.5;TSL_43.6;TSL_43.8"
+    },
+    {
+      "path": "Dataset/Nanjing_valid/08_Overtake/D-6.0-31-20241023_094200_692-20241023_094700_700_CSV/event_02/Overtake_event_2_record.json",
+      "extra_status_ids": "IMR_82.5;TSL_43.6;TSL_43.8"
+    },
+    {
+      "path": "Dataset/Nanjing_valid/08_Overtake/D-6.0-31-20241023_095200_691-20241023_095700_699_CSV/event_01/Overtake_event_1_record.json",
+      "extra_status_ids": "IMR_47.4;TSL_43.6;TSL_43.8"
+    },
+    {
+      "path": "Dataset/Nanjing_valid/08_Overtake/D-6.0-31-20241023_095200_691-20241023_095700_699_CSV/event_02/Overtake_event_2_record.json",
+      "extra_status_ids": "IMR_47.4;TSL_43.6;TSL_43.8"
+    },
+    {
+      "path": "Dataset/Nanjing_valid/08_Overtake/D-6.0-31-20241023_095200_691-20241023_095700_699_CSV/event_03/Overtake_event_3_record.json",
+      "extra_status_ids": "IMR_82.5;TSL_43.6;TSL_43.8"
+    },
+    {
+      "path": "Dataset/Nanjing_valid/08_Overtake/D-6.0-31-20241023_100700_729-20241023_101200_721_CSV/event_01/Overtake_event_1_record.json",
+      "extra_status_ids": "IMR_82.5;TSL_43.6;TSL_43.8"
+    },
+    {
+      "path": "Dataset/Nanjing_valid/08_Overtake/D-6.0-31-20241023_102200_735-20241023_102700_758_CSV/event_01/Overtake_event_1_record.json",
+      "extra_status_ids": "IMR_82.5;TSL_43.6;TSL_43.8"
+    },
+    {
+      "path": "Dataset/Nanjing_valid/08_Overtake/D-6.0-31-20241023_102200_735-20241023_102700_758_CSV/event_02/Overtake_event_2_record.json",
+      "extra_status_ids": "IMR_82.5;TSL_43.6;TSL_43.8"
+    },
+    {
+      "path": "Dataset/Nanjing_valid/08_Overtake/D-6.0-31-20241023_102700_758-20241023_103200_783_CSV/event_01/Overtake_event_1_record.json",
+      "extra_status_ids": "TSL_43.6;TSL_43.8"
+    },
+    {
+      "path": "Dataset/Nanjing_valid/08_Overtake/D-6.0-31-20241023_102700_758-20241023_103200_783_CSV/event_02/Overtake_event_2_record.json",
+      "extra_status_ids": "IMR_82.5;TSL_43.6;TSL_43.8"
+    },
+    {
+      "path": "Dataset/Nanjing_valid/08_Overtake/D-6.0-31-20241023_102700_758-20241023_103200_783_CSV/event_03/Overtake_event_3_record.json",
+      "extra_status_ids": "IMR_82.5;TSL_43.6;TSL_43.8"
+    }
+  ],
+  "combination_total_errors": []
+}

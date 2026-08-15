@@ -1,0 +1,17 @@
+﻿city,category,total_events,compliant_events,violating_events
+Changchun,MaxSpdlim,309,143,166
+Changchun,MinSpdlim,219,161,58
+Changchun,FollowDis,186,23,163
+Changchun,LateralDis,262,258,4
+Changchun,LaneChange,219,201,18
+Changchun,ContinueLaneChange,20,17,3
+Changchun,RoadMarking,179,140,39
+Changchun,Overtake,13,12,1
+Nanjing,MaxSpdlim,1005,419,586
+Nanjing,MinSpdlim,189,134,55
+Nanjing,FollowDis,395,46,349
+Nanjing,LateralDis,1001,953,48
+Nanjing,LaneChange,587,502,85
+Nanjing,ContinueLaneChange,77,57,20
+Nanjing,RoadMarking,473,367,106
+Nanjing,Overtake,39,22,17
