@@ -1,0 +1,31 @@
+{
+  "event_identifier": "event_02",
+  "rows_per_csv": {
+    "EgoInfo": 1947,
+    "ObjInfo": 1947,
+    "MapInfo": 1947,
+    "EvidenceChain": 1947
+  },
+  "identical_event_time_axes": true,
+  "event_time_start_s": 0.01,
+  "event_time_end_s": 19.47,
+  "event_time_increment_s": 0.01,
+  "structured_duration_s": 19.459999999999997,
+  "record_timestamp_duration_s": 19.46,
+  "duration_difference_s": 3.552713678800501e-15,
+  "target_object_ids": [
+    -1,
+    5,
+    8,
+    12
+  ],
+  "target_valid_rows": 1648,
+  "obj_evidence_target_speed_max_abs_difference_mps": 0.0,
+  "obj_evidence_target_distance_x_max_abs_difference_m": 0.0,
+  "first_cross_line_time_s": 4.51,
+  "second_cross_line_time_s": 14.93,
+  "behavior_interval_s": [
+    "3 s",
+    "16.46 s"
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "counting_grain": "city/category/zEvent source/source segment/event_num",
+  "candidate_events": 11978,
+  "released_events": 5173,
+  "excluded_events": 6805,
+  "repaired_events": 303,
+  "events_files_scanned": 3354,
+  "empty_events_files": 870,
+  "duplicate_event_num_files": [],
+  "read_errors": [],
+  "selected_sources": {
+    "Changchun": {
+      "MaxSpdlim": [
+        "zEvent_MaxSpdlim",
+        "zEvent_MaxSpdlim_sign_1"
+      ],
+      "MinSpdlim": [
+        "zEvent_MinSpdlim",
+        "zEvent_MinSpdlim_invalid"
+      ],
+      "FollowDis": [
+        "zEvent_FollowDis"
+      ],
+      "LateralDis": [
+        "zEvent_LateralDis"
+      ],
+      "LaneChange": [
+        "zEvent_LaneChange"
+      ],
+      "ContinueLaneChange": [
+        "zEvent_ContinueLaneChange"
+      ],
+      "RoadMarking": [
+        "zEvent_RoadMarking"
+      ],
+      "Overtake": [
+        "zEvent_Overtake"
+      ]
+    },
+    "Nanjing": {
+      "MaxSpdlim": [
+        "zEvent_MaxSpdlim",
+        "zEvent_MaxSpdlim_sign_1",
+        "zEvent_MaxSpdlim_sign_2"
+      ],
+      "MinSpdlim": [
+        "zEvent_MinSpdlim_sign_1_to_0",
+        "zEvent_MinSpdlim_expressway_lane_min_speed",
+        "zEvent_MinSpdlim_invalid"
+      ],
+      "FollowDis": [
+        "zEvent_FollowDis"
+      ],
+      "LateralDis": [
+        "zEvent_LateralDis"
+      ],
+      "LaneChange": [
+        "zEvent_LaneChange"
+      ],
+      "ContinueLaneChange": [
+        "zEvent_ContinueLaneChange"
+      ],
+      "RoadMarking": [
+        "zEvent_RoadMarking"
+      ],
+      "Overtake": [
+        "zEvent_Overtake"
+      ]
+    }
+  }
+}

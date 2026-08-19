@@ -1,0 +1,26 @@
+{
+  "mode": "probe",
+  "events_in_event_audit": 5173,
+  "events_omitted_without_complete_video_set": [],
+  "events_audited": 5173,
+  "videos_expected": 36211,
+  "videos_with_readable_metadata": 36211,
+  "videos_without_reported_errors": 36211,
+  "videos_with_duration_within_one_frame": 4181,
+  "events_with_all_videos_without_reported_errors": 5173,
+  "events_with_all_video_durations_within_one_frame": 0,
+  "total_decode_error_packets": 0,
+  "maximum_duration_difference": {
+    "event_id": "Nanjing_valid/08_Overtake/D-6.0-28-20240927_104620_030-20240927_105120_071_CSV/event_01",
+    "video": "video_Side_B_event_001.mp4",
+    "structured_duration_s": 27.98,
+    "video_duration_s": 11.499885,
+    "frame_rate_fps": 30.00030000300003,
+    "duration_difference_s": 16.480114999999998,
+    "duration_difference_frames": 494.4083940839408,
+    "within_one_frame": false,
+    "decoded_frames": 0,
+    "decode_error_packets": 0,
+    "error": ""
+  }
+}
