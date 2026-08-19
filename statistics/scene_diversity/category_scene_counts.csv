@@ -1,0 +1,35 @@
+﻿category,primary_scene_code,primary_scene_en,primary_scene_zh,count,percentage
+MaxSpdlim,max_lane_sign,Lane-level maximum-speed sign,车道级最高限速标志控制,118,8.98
+MaxSpdlim,max_road_sign,Road-level roadside maximum-speed sign,路侧道路/路段级最高限速标志控制,224,17.05
+MaxSpdlim,max_map,Map-based maximum-speed control,地图控制的最高限速,827,62.94
+MaxSpdlim,max_no_control,No explicit maximum-speed-limit control,无明显最高限速控制,145,11.04
+MinSpdlim,min_lane_sign,Lane-level minimum-speed sign,车道级最低限速标志控制,31,7.6
+MinSpdlim,min_road_sign,Road-level roadside minimum-speed sign,路侧道路/路段级最低限速标志控制,47,11.52
+MinSpdlim,min_no_sign_regular,Conventional event without a minimum-speed sign,无最低限速标志控制的常规场景,303,74.26
+MinSpdlim,min_special_congestion,Special scenario: congestion,特殊场景：拥堵,7,1.72
+MinSpdlim,min_special_construction,Special scenario: construction,特殊场景：施工,15,3.68
+MinSpdlim,min_special_curve,Special scenario: curve,特殊场景：弯道,5,1.23
+FollowDis,follow_continuous,Continuous following throughout,全程跟车,143,24.61
+FollowDis,follow_ego_lane_change,Ego-vehicle lane change,自车换道,95,16.35
+FollowDis,follow_lead_cut_out,Lead-vehicle cut-out,前车切出（cut-out）,102,17.56
+FollowDis,follow_adjacent_cut_in,Adjacent-vehicle cut-in,邻车切入（cut-in）,115,19.79
+FollowDis,follow_multiple_changes,Multiple following-target changes,多次跟车目标切换/复合交互,126,21.69
+LateralDis,lat_left_passes_ego,Left-side vehicle passes ego,左侧邻车超越自车,403,31.91
+LateralDis,lat_ego_passes_left,Ego passes left-side vehicle,左侧邻车被自车超越,259,20.51
+LateralDis,lat_right_passes_ego,Right-side vehicle passes ego,右侧邻车超越自车,182,14.41
+LateralDis,lat_ego_passes_right,Ego passes right-side vehicle,右侧邻车被自车超越,271,21.46
+LateralDis,lat_non_passing_interaction,Adjacent-vehicle interaction without a completed pass,未形成完整超越的相邻车交互,124,9.82
+LateralDis,lat_complex_interaction,Complex or multi-vehicle lateral interaction,复合/多车横向交互,24,1.9
+LaneChange,lc_left,Completed left lane change,向左换道,364,45.16
+LaneChange,lc_right,Completed right lane change,向右换道,356,44.17
+LaneChange,lc_line_only,Line overlap without completed lane change,压线但未完成换道,86,10.67
+ContinueLaneChange,clc_left_left,Left then left,连续向左换道,33,34.02
+ContinueLaneChange,clc_right_right,Right then right,连续向右换道,33,34.02
+ContinueLaneChange,clc_left_right,Left then right,先左后右换道,19,19.59
+ContinueLaneChange,clc_right_left,Right then left,先右后左换道,12,12.37
+RoadMarking,mark_dashed,Dashed line,压/跨虚线,549,84.2
+RoadMarking,mark_solid,Solid line,压/跨实线,55,8.44
+RoadMarking,mark_other_line,Other or mixed line,压/跨其他或混合标线,48,7.36
+Overtake,overtake_left,Confirmed left-side overtake,左侧超车,25,48.08
+Overtake,overtake_right,Confirmed right-side overtake,右侧超车,16,30.77
+Overtake,overtake_lane_change_only,Left-right lane changes without overtaking,仅左右换道未超车,11,21.15

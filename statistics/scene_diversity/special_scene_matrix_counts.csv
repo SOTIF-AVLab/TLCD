@@ -1,0 +1,16 @@
+﻿special_scene_code,special_scene_en,special_scene_zh,MaxSpdlim,MinSpdlim,FollowDis,LateralDis,LaneChange,ContinueLaneChange,RoadMarking,Overtake,All
+multi_lane,Multi-lane road,多车道道路,995,407,538,925,689,92,523,49,4218
+single_lane,Single-lane road,单车道道路,21,0,3,0,5,0,12,0,41
+single_carriageway,Single carriageway,单幅道路,0,0,0,0,0,0,0,0,0
+ramp,Ramp,包含上/下匝道,109,1,6,51,22,4,63,1,257
+accel_decel_lane,Acceleration/deceleration lane,加/减速车道,179,2,97,130,154,19,136,7,724
+jct_intersection,JCT/intersection link,JCT/交叉连接道,195,1,15,176,49,1,45,3,485
+tunnel,Tunnel,隧道,106,1,48,141,62,4,54,0,416
+construction,Construction,施工路段,66,41,10,0,24,5,27,1,174
+night,Night,夜间,54,4,29,0,23,2,16,0,128
+slope,Slope/grade,坡道,10,1,1,0,1,1,2,1,17
+curve,Curve,弯道,0,5,1,0,1,0,2,0,9
+congestion,Congestion,拥堵,55,11,19,0,15,0,11,2,113
+toll,Toll area/booth,收费站/收费区,13,0,2,0,4,0,6,0,25
+bridge_elevated,Bridge/elevated road,桥梁/高架道路,216,27,54,0,108,13,81,4,503
+adverse_weather,"Rain, wet road, fog, or low visibility",雨天/湿滑/雾/低能见度,7,3,5,0,4,0,7,0,26

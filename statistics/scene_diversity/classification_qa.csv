@@ -1,0 +1,9 @@
+﻿category,total,structured,explicit_text,structured_inference,text_inference,manual_review,unclear
+MaxSpdlim,1314,144,1170,0,0,0,0
+MinSpdlim,408,27,67,314,0,0,0
+FollowDis,581,0,571,0,10,0,0
+LateralDis,1263,0,1155,0,108,0,0
+LaneChange,806,806,0,0,0,0,0
+ContinueLaneChange,97,97,0,0,0,0,0
+RoadMarking,652,652,0,0,0,0,0
+Overtake,52,38,0,0,0,14,0

@@ -1,0 +1,121 @@
+﻿special_scene_code,special_scene_en,special_scene_zh,category,count,category_total,percentage_within_category
+multi_lane,Multi-lane road,多车道道路,MaxSpdlim,995,1314,75.72
+multi_lane,Multi-lane road,多车道道路,MinSpdlim,407,408,99.75
+multi_lane,Multi-lane road,多车道道路,FollowDis,538,581,92.6
+multi_lane,Multi-lane road,多车道道路,LateralDis,925,1263,73.24
+multi_lane,Multi-lane road,多车道道路,LaneChange,689,806,85.48
+multi_lane,Multi-lane road,多车道道路,ContinueLaneChange,92,97,94.85
+multi_lane,Multi-lane road,多车道道路,RoadMarking,523,652,80.21
+multi_lane,Multi-lane road,多车道道路,Overtake,49,52,94.23
+single_lane,Single-lane road,单车道道路,MaxSpdlim,21,1314,1.6
+single_lane,Single-lane road,单车道道路,MinSpdlim,0,408,0.0
+single_lane,Single-lane road,单车道道路,FollowDis,3,581,0.52
+single_lane,Single-lane road,单车道道路,LateralDis,0,1263,0.0
+single_lane,Single-lane road,单车道道路,LaneChange,5,806,0.62
+single_lane,Single-lane road,单车道道路,ContinueLaneChange,0,97,0.0
+single_lane,Single-lane road,单车道道路,RoadMarking,12,652,1.84
+single_lane,Single-lane road,单车道道路,Overtake,0,52,0.0
+single_carriageway,Single carriageway,单幅道路,MaxSpdlim,0,1314,0.0
+single_carriageway,Single carriageway,单幅道路,MinSpdlim,0,408,0.0
+single_carriageway,Single carriageway,单幅道路,FollowDis,0,581,0.0
+single_carriageway,Single carriageway,单幅道路,LateralDis,0,1263,0.0
+single_carriageway,Single carriageway,单幅道路,LaneChange,0,806,0.0
+single_carriageway,Single carriageway,单幅道路,ContinueLaneChange,0,97,0.0
+single_carriageway,Single carriageway,单幅道路,RoadMarking,0,652,0.0
+single_carriageway,Single carriageway,单幅道路,Overtake,0,52,0.0
+ramp,Ramp,包含上/下匝道,MaxSpdlim,109,1314,8.3
+ramp,Ramp,包含上/下匝道,MinSpdlim,1,408,0.25
+ramp,Ramp,包含上/下匝道,FollowDis,6,581,1.03
+ramp,Ramp,包含上/下匝道,LateralDis,51,1263,4.04
+ramp,Ramp,包含上/下匝道,LaneChange,22,806,2.73
+ramp,Ramp,包含上/下匝道,ContinueLaneChange,4,97,4.12
+ramp,Ramp,包含上/下匝道,RoadMarking,63,652,9.66
+ramp,Ramp,包含上/下匝道,Overtake,1,52,1.92
+accel_decel_lane,Acceleration/deceleration lane,加/减速车道,MaxSpdlim,179,1314,13.62
+accel_decel_lane,Acceleration/deceleration lane,加/减速车道,MinSpdlim,2,408,0.49
+accel_decel_lane,Acceleration/deceleration lane,加/减速车道,FollowDis,97,581,16.7
+accel_decel_lane,Acceleration/deceleration lane,加/减速车道,LateralDis,130,1263,10.29
+accel_decel_lane,Acceleration/deceleration lane,加/减速车道,LaneChange,154,806,19.11
+accel_decel_lane,Acceleration/deceleration lane,加/减速车道,ContinueLaneChange,19,97,19.59
+accel_decel_lane,Acceleration/deceleration lane,加/减速车道,RoadMarking,136,652,20.86
+accel_decel_lane,Acceleration/deceleration lane,加/减速车道,Overtake,7,52,13.46
+jct_intersection,JCT/intersection link,JCT/交叉连接道,MaxSpdlim,195,1314,14.84
+jct_intersection,JCT/intersection link,JCT/交叉连接道,MinSpdlim,1,408,0.25
+jct_intersection,JCT/intersection link,JCT/交叉连接道,FollowDis,15,581,2.58
+jct_intersection,JCT/intersection link,JCT/交叉连接道,LateralDis,176,1263,13.94
+jct_intersection,JCT/intersection link,JCT/交叉连接道,LaneChange,49,806,6.08
+jct_intersection,JCT/intersection link,JCT/交叉连接道,ContinueLaneChange,1,97,1.03
+jct_intersection,JCT/intersection link,JCT/交叉连接道,RoadMarking,45,652,6.9
+jct_intersection,JCT/intersection link,JCT/交叉连接道,Overtake,3,52,5.77
+tunnel,Tunnel,隧道,MaxSpdlim,106,1314,8.07
+tunnel,Tunnel,隧道,MinSpdlim,1,408,0.25
+tunnel,Tunnel,隧道,FollowDis,48,581,8.26
+tunnel,Tunnel,隧道,LateralDis,141,1263,11.16
+tunnel,Tunnel,隧道,LaneChange,62,806,7.69
+tunnel,Tunnel,隧道,ContinueLaneChange,4,97,4.12
+tunnel,Tunnel,隧道,RoadMarking,54,652,8.28
+tunnel,Tunnel,隧道,Overtake,0,52,0.0
+construction,Construction,施工路段,MaxSpdlim,66,1314,5.02
+construction,Construction,施工路段,MinSpdlim,41,408,10.05
+construction,Construction,施工路段,FollowDis,10,581,1.72
+construction,Construction,施工路段,LateralDis,0,1263,0.0
+construction,Construction,施工路段,LaneChange,24,806,2.98
+construction,Construction,施工路段,ContinueLaneChange,5,97,5.15
+construction,Construction,施工路段,RoadMarking,27,652,4.14
+construction,Construction,施工路段,Overtake,1,52,1.92
+night,Night,夜间,MaxSpdlim,54,1314,4.11
+night,Night,夜间,MinSpdlim,4,408,0.98
+night,Night,夜间,FollowDis,29,581,4.99
+night,Night,夜间,LateralDis,0,1263,0.0
+night,Night,夜间,LaneChange,23,806,2.85
+night,Night,夜间,ContinueLaneChange,2,97,2.06
+night,Night,夜间,RoadMarking,16,652,2.45
+night,Night,夜间,Overtake,0,52,0.0
+slope,Slope/grade,坡道,MaxSpdlim,10,1314,0.76
+slope,Slope/grade,坡道,MinSpdlim,1,408,0.25
+slope,Slope/grade,坡道,FollowDis,1,581,0.17
+slope,Slope/grade,坡道,LateralDis,0,1263,0.0
+slope,Slope/grade,坡道,LaneChange,1,806,0.12
+slope,Slope/grade,坡道,ContinueLaneChange,1,97,1.03
+slope,Slope/grade,坡道,RoadMarking,2,652,0.31
+slope,Slope/grade,坡道,Overtake,1,52,1.92
+curve,Curve,弯道,MaxSpdlim,0,1314,0.0
+curve,Curve,弯道,MinSpdlim,5,408,1.23
+curve,Curve,弯道,FollowDis,1,581,0.17
+curve,Curve,弯道,LateralDis,0,1263,0.0
+curve,Curve,弯道,LaneChange,1,806,0.12
+curve,Curve,弯道,ContinueLaneChange,0,97,0.0
+curve,Curve,弯道,RoadMarking,2,652,0.31
+curve,Curve,弯道,Overtake,0,52,0.0
+congestion,Congestion,拥堵,MaxSpdlim,55,1314,4.19
+congestion,Congestion,拥堵,MinSpdlim,11,408,2.7
+congestion,Congestion,拥堵,FollowDis,19,581,3.27
+congestion,Congestion,拥堵,LateralDis,0,1263,0.0
+congestion,Congestion,拥堵,LaneChange,15,806,1.86
+congestion,Congestion,拥堵,ContinueLaneChange,0,97,0.0
+congestion,Congestion,拥堵,RoadMarking,11,652,1.69
+congestion,Congestion,拥堵,Overtake,2,52,3.85
+toll,Toll area/booth,收费站/收费区,MaxSpdlim,13,1314,0.99
+toll,Toll area/booth,收费站/收费区,MinSpdlim,0,408,0.0
+toll,Toll area/booth,收费站/收费区,FollowDis,2,581,0.34
+toll,Toll area/booth,收费站/收费区,LateralDis,0,1263,0.0
+toll,Toll area/booth,收费站/收费区,LaneChange,4,806,0.5
+toll,Toll area/booth,收费站/收费区,ContinueLaneChange,0,97,0.0
+toll,Toll area/booth,收费站/收费区,RoadMarking,6,652,0.92
+toll,Toll area/booth,收费站/收费区,Overtake,0,52,0.0
+bridge_elevated,Bridge/elevated road,桥梁/高架道路,MaxSpdlim,216,1314,16.44
+bridge_elevated,Bridge/elevated road,桥梁/高架道路,MinSpdlim,27,408,6.62
+bridge_elevated,Bridge/elevated road,桥梁/高架道路,FollowDis,54,581,9.29
+bridge_elevated,Bridge/elevated road,桥梁/高架道路,LateralDis,0,1263,0.0
+bridge_elevated,Bridge/elevated road,桥梁/高架道路,LaneChange,108,806,13.4
+bridge_elevated,Bridge/elevated road,桥梁/高架道路,ContinueLaneChange,13,97,13.4
+bridge_elevated,Bridge/elevated road,桥梁/高架道路,RoadMarking,81,652,12.42
+bridge_elevated,Bridge/elevated road,桥梁/高架道路,Overtake,4,52,7.69
+adverse_weather,"Rain, wet road, fog, or low visibility",雨天/湿滑/雾/低能见度,MaxSpdlim,7,1314,0.53
+adverse_weather,"Rain, wet road, fog, or low visibility",雨天/湿滑/雾/低能见度,MinSpdlim,3,408,0.74
+adverse_weather,"Rain, wet road, fog, or low visibility",雨天/湿滑/雾/低能见度,FollowDis,5,581,0.86
+adverse_weather,"Rain, wet road, fog, or low visibility",雨天/湿滑/雾/低能见度,LateralDis,0,1263,0.0
+adverse_weather,"Rain, wet road, fog, or low visibility",雨天/湿滑/雾/低能见度,LaneChange,4,806,0.5
+adverse_weather,"Rain, wet road, fog, or low visibility",雨天/湿滑/雾/低能见度,ContinueLaneChange,0,97,0.0
+adverse_weather,"Rain, wet road, fog, or low visibility",雨天/湿滑/雾/低能见度,RoadMarking,7,652,1.07
+adverse_weather,"Rain, wet road, fog, or low visibility",雨天/湿滑/雾/低能见度,Overtake,0,52,0.0

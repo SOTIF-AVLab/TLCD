@@ -1,0 +1,16 @@
+﻿special_scene_code,special_scene_en,special_scene_zh,MaxSpdlim,MinSpdlim,FollowDis,LateralDis,LaneChange,ContinueLaneChange,RoadMarking,Overtake
+multi_lane,Multi-lane road,多车道道路,75.72,99.75,92.6,73.24,85.48,94.85,80.21,94.23
+single_lane,Single-lane road,单车道道路,1.6,0.0,0.52,0.0,0.62,0.0,1.84,0.0
+single_carriageway,Single carriageway,单幅道路,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+ramp,Ramp,包含上/下匝道,8.3,0.25,1.03,4.04,2.73,4.12,9.66,1.92
+accel_decel_lane,Acceleration/deceleration lane,加/减速车道,13.62,0.49,16.7,10.29,19.11,19.59,20.86,13.46
+jct_intersection,JCT/intersection link,JCT/交叉连接道,14.84,0.25,2.58,13.94,6.08,1.03,6.9,5.77
+tunnel,Tunnel,隧道,8.07,0.25,8.26,11.16,7.69,4.12,8.28,0.0
+construction,Construction,施工路段,5.02,10.05,1.72,0.0,2.98,5.15,4.14,1.92
+night,Night,夜间,4.11,0.98,4.99,0.0,2.85,2.06,2.45,0.0
+slope,Slope/grade,坡道,0.76,0.25,0.17,0.0,0.12,1.03,0.31,1.92
+curve,Curve,弯道,0.0,1.23,0.17,0.0,0.12,0.0,0.31,0.0
+congestion,Congestion,拥堵,4.19,2.7,3.27,0.0,1.86,0.0,1.69,3.85
+toll,Toll area/booth,收费站/收费区,0.99,0.0,0.34,0.0,0.5,0.0,0.92,0.0
+bridge_elevated,Bridge/elevated road,桥梁/高架道路,16.44,6.62,9.29,0.0,13.4,13.4,12.42,7.69
+adverse_weather,"Rain, wet road, fog, or low visibility",雨天/湿滑/雾/低能见度,0.53,0.74,0.86,0.0,0.5,0.0,1.07,0.0
