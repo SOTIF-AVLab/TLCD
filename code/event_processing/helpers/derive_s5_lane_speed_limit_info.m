@@ -1,0 +1,19 @@
+function [lane_max_spdlim, lane_num_same_direction, ego_lane_index] = derive_s5_lane_speed_limit_info(S)
+lane_speed_limits = [ ...
+    S.VH_1_IDT_Sf_MapLocSrv_TravelSpeed_struct.Sf_EHRTravelSpeedLeft2CurValue_uint32(:,2), ...
+    S.VH_1_IDT_Sf_MapLocSrv_TravelSpeed_struct.Sf_EHRTravelSpeedLeft1CurValue_uint32(:,2), ...
+    S.VH_1_IDT_Sf_MapLocSrv_TravelSpeed_struct.Sf_EHRTravelSpeedCurrentCurValue_uint32(:,2), ...
+    S.VH_1_IDT_Sf_MapLocSrv_TravelSpeed_struct.Sf_EHRTravelSpeedRight1CurValue_uint32(:,2), ...
+    S.VH_1_IDT_Sf_MapLocSrv_TravelSpeed_struct.Sf_EHRTravelSpeedRight2CurValue_uint32(:,2) ...
+    ];
+
+ego_lane_index = sum(lane_speed_limits(:,1:2) > 0, 2) + 1;
+lane_max_spdlim = zeros(size(lane_speed_limits));
+for i = 1:size(lane_speed_limits, 1)
+    speed_limits = lane_speed_limits(i, :);
+    speed_limits = speed_limits(isfinite(speed_limits) & speed_limits > 0);
+    lane_max_spdlim(i, 1:numel(speed_limits)) = speed_limits;
+end
+
+lane_num_same_direction = sum(lane_max_spdlim > 60, 2);
+end
