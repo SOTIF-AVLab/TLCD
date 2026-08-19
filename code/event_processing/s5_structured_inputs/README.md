@@ -1,26 +1,16 @@
-# Event processing
+# Processing and validation code
 
-TLCD events are processed in three release-building stages:
+This directory contains the custom code used after event-triggered acquisition to construct and validate TLCD 1.0.
 
-1. [`s5_structured_inputs/`](s5_structured_inputs/) produces the three synchronized upstream tables for every event: `EgoInfo.csv`, `ObjInfo.csv`, and `MapInfo.csv`.
-2. [`s6_evidence_chain/`](s6_evidence_chain/) combines these inputs with category-specific monitoring variables to create `EvidenceChain.csv`.
-3. [`s7_record_json/`](s7_record_json/) converts the evidence chain and event metadata into the released `*_record.json` file.
+| Directory | Purpose |
+| --- | --- |
+| [`event_processing/`](event_processing/) | Generate the three structured CSV inputs, build `EvidenceChain.csv`, create `record.json`, and document historical correction scripts. |
+| [`video_processing/`](video_processing/) | Extract the seven camera streams and generate the released fixed-30-Hz HEVC/MP4 videos. |
+| [`vlm_review/`](vlm_review/) | Generate auxiliary scene descriptions and driving suggestions and flag questionable cases for manual review. |
+| [`validation/`](validation/) | Reproduce dataset statistics and run structural, temporal, and video-integrity checks. |
 
-The eight numbered category implementations correspond to maximum speed, minimum speed, following distance, lateral distance, lane change, continuous lane change, road marking, and overtaking. Shared MATLAB helpers are in [`helpers/`](helpers/).
+The repository intentionally starts at S5. S1–S4 are not distributed because the acquisition platform stored synchronized data as event-level records at collection time; the public processing chain begins with construction of the released event files.
 
-Before running S5 or S6, point `TLCD_DATA_ROOT` to one city-level source directory:
+Local paths are removed from the primary pipeline; set roots with the documented command-line arguments or environment variables. The MATLAB S5–S6 scripts use `TLCD_DATA_ROOT`; the VLM programs read the API credential from `QWEN_API_KEY` or an explicitly supplied external key file. Historical patch scripts retain some project-specific defaults for provenance and must be reviewed before use.
 
-```bash
-export TLCD_DATA_ROOT=/path/to/Nanjing
-```
-
-Run the MATLAB category scripts individually or use `S5_run_selected_Event_input` and `S6_run_selected_Evidence_chain`. For S7:
-
-```bash
-export TLCD_DATA_ROOT=/path/to/Nanjing
-python s7_record_json/S7_run_all.py
-```
-
-S1–S4 are intentionally excluded. The paper treats acquisition output as already organized by event; publishing those earlier local conversion and monitoring-development utilities would not represent the released data-construction boundary.
-
-Scripts S8 and later are isolated in [`patches/`](patches/) because they are historical repairs and normalization passes rather than the primary release pipeline.
+The historical patch scripts are provided for provenance. They are not required for a clean run of the S5–S7 pipeline on newly acquired events.
