@@ -13,7 +13,7 @@ TLCD 1.0 is organized around traffic-law-related driving events rather than comp
 - Included observations: seven camera streams covering six directions, structured ego-vehicle states, up to 30 fused surrounding objects, and lane-level map information.
 - Excluded raw sensors: raw LiDAR, raw millimeter-wave radar, and raw GNSS/INS measurements.
 
-## Planned directory layout
+## Directory layout
 
 ```text
 Dataset/
@@ -39,9 +39,10 @@ Within each category, source segments contain one or more `event_*` directories.
 | `MapInfo.csv` | Time-aligned road, lane, and map attributes used by the monitor. |
 | `EvidenceChain.csv` | Category-specific trigger variables, thresholds, intermediate states, and compliance evidence. |
 | `*_record.json` | Human-readable event metadata, applicable provisions, temporal anchors, key evidence, reviewed compliance label, and auxiliary text. |
-| Seven video files | Synchronized camera views covering two front views, one rear view, and four side views. |
+| `video/*.mp4` | Seven fixed-30-Hz HEVC event videos covering 30° and 120° front views, rear, left-front, left-rear, right-front, and right-rear views. |
+| `video_cfr30_metadata/fixed_fps_qa.json` | Per-event generation and decoding QA for the fixed-rate videos. |
 
-Exact video filenames and encoding details will be added after packaging validation.
+The seven filenames are `video_30_event_NNN.mp4`, `video_120_event_NNN.mp4`, `video_rear_event_NNN.mp4`, and `video_Side_{B,F,L,R}_event_NNN.mp4`, where `NNN` is the zero-padded event number.
 
 ## Event labels
 
@@ -56,7 +57,7 @@ Frame-level states in the evidence chain preserve temporal transitions such as c
 
 ## Time alignment
 
-Structured topics are mapped to a shared `event_time` axis with a 0.01-s interval. At each target timestamp, the latest source sample not later than that timestamp is retained (zero-order hold). Video and structured records refer to the same event window.
+Structured topics are mapped to a shared `event_time` axis with a 0.01-s interval. At each target timestamp, the latest source sample not later than that timestamp is retained (zero-order hold). For each camera view, decodable source frames are ordered as acquired and mapped uniformly to the event interval. The nearest source frame is selected on a fixed 30-Hz grid; the nearest real frame is repeated where necessary, and no interpolated imagery is synthesized. `event_time` and the timestamp interval in `record.json` remain the authoritative time base for the 100-Hz structured signals.
 
 ## Event-window construction
 
@@ -74,3 +75,8 @@ The eight categories use different temporal semantics. Continuous-state constrai
 
 One of 5,174 discovered candidate event directories did not contain a valid `record.json` and is excluded. The validated dataset count is therefore 5,173 events.
 
+## Samples and access
+
+One complete event for each city–category combination is distributed through the repository's GitHub sample release. See [`samples/README.md`](samples/README.md) for the 16-asset manifest and checksums. Sample videos are an interim release and may later be replaced by de-identified versions.
+
+The full dataset is available through an application process while video de-identification and release review are ongoing. Contact `hong_wang@mail.tsinghua.edu.cn` or `zhao_cx25@mails.tsinghua.edu.cn` using the subject `[Apply for TLCD] name_country(region)_organization`; include affiliation, research purpose, intended use, and requested data scope.

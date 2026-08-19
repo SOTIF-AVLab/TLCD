@@ -2,7 +2,7 @@
 
 **TLCD 1.0: A Traffic Law Compliance Dataset for Autonomous Vehicles Based on Legal Driving-Behavior Monitoring**
 
-[中文说明](README_zh-CN.md) · [Dataset documentation](DATASET_INFO.md) · [Manuscript materials](manuscript/) · [Statistics](statistics/)
+[中文说明](README_zh-CN.md) · [Dataset documentation](DATASET_INFO.md) · [Code](code/) · [Samples](samples/) · [Manuscript materials](manuscript/) · [Statistics](statistics/)
 
 TLCD 1.0 is an event-level, real-world driving dataset designed for research on traffic-law compliance, autonomous-driving safety, behavior monitoring, and safety-oriented data mining. It was collected with a FAW Hongqi EH7 engineering vehicle on highways and urban expressways in Nanjing and Changchun, China.
 
@@ -16,7 +16,7 @@ TLCD 1.0 is an event-level, real-world driving dataset designed for research on 
 - **Two cities:** Nanjing and Changchun.
 - **Eight event categories:** maximum-speed limit, minimum-speed limit, following distance, lateral distance, lane change, continuous lane change, road-marking compliance, and overtaking.
 - **17 applicable legal provisions** represented by machine-executable monitoring logic.
-- **Seven synchronized camera streams** covering six viewing directions, together with ego-vehicle, fused-object, map, evidence-chain, and event-summary data.
+- **Seven fixed-30-Hz HEVC/MP4 camera videos** covering six viewing directions, together with 100-Hz ego-vehicle, fused-object, map, evidence-chain, and event-summary data.
 - Both **autonomous driving** and **manual driving** are represented.
 - Final event-level compliance labels were manually reviewed; VLM-generated descriptions and driving suggestions are auxiliary annotations and do not determine the labels.
 
@@ -41,7 +41,7 @@ TLCD 1.0 is an event-level, real-world driving dataset designed for research on 
 
 The platform integrates seven cameras, three LiDARs, five millimeter-wave radars, GNSS/INS localization, high-definition maps, and an onboard computing module. A separate Raspberry Pi executed traffic-law-compliance monitoring at 100 Hz. Event-trigger signals caused the recording computer to retain synchronized, category-specific windows rather than continuously storing every trip.
 
-The released dataset includes seven raw camera-video streams plus structured ego, object, map, evidence, and event-summary files. It does **not** include raw LiDAR, raw radar, or raw GNSS/INS measurements.
+The released dataset includes seven event videos generated from the original camera streams plus structured ego, object, map, evidence, and event-summary files. It does **not** include the original continuous camera recordings, raw LiDAR, raw radar, or raw GNSS/INS measurements.
 
 ## Event categories
 
@@ -63,12 +63,20 @@ TLCD/
 ├── README.md
 ├── README_zh-CN.md
 ├── DATASET_INFO.md
+├── CODE_AVAILABILITY.md
+├── code/                # Event, video, VLM-review, and validation code
+├── samples/             # Sample-event manifest and release links
 ├── manuscript/          # Work-in-progress paper source and figures
-├── statistics/          # Dataset composition and QA summaries
-└── scripts/             # Reproducible statistics and figure scripts
+└── statistics/          # Dataset composition and QA summaries
 ```
 
-The binary dataset package will follow the event-level directory structure documented in [DATASET_INFO.md](DATASET_INFO.md). The repository currently provides the documentation, statistics, manuscript source, and representative scientific figures while the full binary package is prepared for release.
+The primary processing chain begins at S5 because acquisition outputs were already stored as event-level records. S5 generates the three structured CSV inputs, S6 constructs `EvidenceChain.csv`, and S7 creates `record.json`. Historical S8+ repair utilities are isolated and documented under [`code/event_processing/patches/`](code/event_processing/patches/). Legacy drawing programs are not part of the public code package.
+
+## Samples
+
+The GitHub sample release contains one complete event from each of the eight categories for each city (16 events in total). Every sample preserves the released structured files and seven final 30-Hz videos. See [`samples/README.md`](samples/README.md) for the manifest, checksums, and download instructions.
+
+Sample videos are an interim release and may be replaced by de-identified versions. Cite the release tag or asset checksum used in an analysis.
 
 ## Access
 
@@ -78,7 +86,17 @@ Clone the repository with:
 git clone https://github.com/SOTIF-AVLab/TLCD.git
 ```
 
-Dataset release status and download instructions will be maintained in this README. Large video files may be distributed separately from the Git history to keep the repository usable.
+To request access to the full dataset, contact [hong_wang@mail.tsinghua.edu.cn](mailto:hong_wang@mail.tsinghua.edu.cn) or [zhao_cx25@mails.tsinghua.edu.cn](mailto:zhao_cx25@mails.tsinghua.edu.cn).
+
+- Use the email subject: **[Apply for TLCD] name_country(region)_organization**
+- In the email, introduce your department or organization, research interest, intended use, and the requested data scope in sufficient detail.
+- Full-data requests are reviewed by the project team. Approval and transfer conditions depend on completion of the applicable privacy, authorization, and data-release review.
+
+The full video dataset is not placed in ordinary Git history. Public metadata, aggregate statistics, processing code, and representative sample events remain available through this repository.
+
+## Code availability
+
+Custom code used to construct and validate the released dataset is available in [`code/`](code/). It includes the S5–S7 event-processing chain, separately documented S8+ historical patches, fixed-30-Hz video processing, VLM-assisted scene review with credentials removed, and technical-validation scripts. See [`CODE_AVAILABILITY.md`](CODE_AVAILABILITY.md) for scope and environment details.
 
 ## Quality control
 
@@ -96,7 +114,7 @@ The TLCD manuscript is in preparation. A complete dataset citation, DOI, and Bib
 
 ## License
 
-The dataset and software licenses are being finalized. No reuse license is granted by omission; please contact the maintainers before redistributing dataset files or using them beyond evaluation and research review.
+The dataset and software licenses are being finalized. No reuse license is granted by omission; please contact the maintainers before redistributing dataset files or using them beyond evaluation and research review. API provider terms also apply when independently running the VLM-assisted review code.
 
 ## Acknowledgements
 
@@ -107,4 +125,3 @@ TLCD was developed by the Safety Of The Intended Functionality (SOTIF) research 
 - School of Vehicle and Mobility, Tsinghua University
 - Tsinghua Intelligent Vehicle Design and Safety Research Institute
 - Safety Of The Intended Functionality (SOTIF) Research Team
-
