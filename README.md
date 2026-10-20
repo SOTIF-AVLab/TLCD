@@ -84,7 +84,7 @@ The primary processing chain begins at S5 because acquisition outputs were alrea
 
 The [`samples-v1.1`](https://github.com/SOTIF-AVLab/TLCD/releases/tag/samples-v1.1) release refreshes the same 16 city–category events from the current dataset. Every ZIP contains four CSV files, one current record JSON, seven 30-Hz H.264 videos, and the shared camera parameters and documentation. See [`samples/README.md`](samples/README.md) for the manifest, checksums, validation results and download instructions.
 
-Use `samples-v1.1` for the refreshed files; `samples-v1.0` identifies the previous preview. Cite the exact release tag and asset checksum used in an analysis. Updating the samples does not imply that the full dataset is publicly downloadable.
+Use `samples-v1.1` for the refreshed files. Cite the exact release tag and asset checksum used in an analysis. Updating the samples does not imply that the full dataset is publicly downloadable.
 
 ## Access
 

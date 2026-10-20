@@ -61,7 +61,7 @@ TLCD 1.0 面向交通法规合规性、自动驾驶安全、驾驶行为监测�
 
 [`samples-v1.1`](https://github.com/SOTIF-AVLab/TLCD/releases/tag/samples-v1.1) 按“南京/长春 × 8 类事件”各提供 1 条完整事件，共 16 条，沿用原示例的事件身份并更新为当前数据集文件。每包包含四个 CSV、最新记录 JSON、七路 30 Hz H.264 视频，以及共享相机参数、字段字典和相机使用说明。样本清单、校验值、核验结果和下载方式见 [`samples/README.md`](samples/README.md)。
 
-新版下载请使用 `samples-v1.1`；`samples-v1.0` 对应原预览版本。引用时请记录版本标签和校验值。完整数据的申请方式保持不变。
+示例下载请使用 `samples-v1.1`。引用时请记录版本标签和校验值。完整数据的申请方式保持不变。
 
 申请完整数据集，请联系 [hong_wang@mail.tsinghua.edu.cn](mailto:hong_wang@mail.tsinghua.edu.cn) 或 [zhao_cx25@mails.tsinghua.edu.cn](mailto:zhao_cx25@mails.tsinghua.edu.cn)。
 

@@ -1,6 +1,6 @@
 # TLCD sample events
 
-The [`samples-v1.1`](https://github.com/SOTIF-AVLab/TLCD/releases/tag/samples-v1.1) GitHub release contains one complete event for each city–category combination: two cities × eight categories = 16 sample events. Refreshed on 2026-10-20, it retains the event identities from `samples-v1.0` and replaces their contents with the current dataset files.
+The [`samples-v1.1`](https://github.com/SOTIF-AVLab/TLCD/releases/tag/samples-v1.1) GitHub release contains one complete event for each city–category combination: two cities × eight categories = 16 sample events. Refreshed on 2026-10-20, it contains the current dataset files for the 16 selected events.
 
 Each ZIP archive preserves the dataset-relative path and contains:
 
@@ -12,7 +12,7 @@ Each ZIP archive preserves the dataset-relative path and contains:
 
 Each record now includes `camera_set_id`; use it with the included parameter JSON and the video's tag to select the appropriate intrinsics, distortion coefficients and extrinsics. Current `Result` objects contain `Compliance_label`, `Violation_reason`, `Scenario_description_VLM` and `Driving_suggestion_VLM`. The two VLM text fields are final English auxiliary annotations, including review and revision.
 
-Historical H.265 backups and `video_cfr30_metadata/fixed_fps_qa.json` are not copied into the refreshed archives: they describe an earlier processing stage. The prior preview remains identified by [`samples-v1.0`](https://github.com/SOTIF-AVLab/TLCD/releases/tag/samples-v1.0), with its [original manifest](https://github.com/SOTIF-AVLab/TLCD/blob/ac262fb9f713591b8c2b9966ad3bd568f526401a/samples/manifest.csv) and [original checksums](https://github.com/SOTIF-AVLab/TLCD/blob/ac262fb9f713591b8c2b9966ad3bd568f526401a/samples/SHA256SUMS). Record both the release tag and SHA-256 checksum when using a sample.
+Historical H.265 backups and `video_cfr30_metadata/fixed_fps_qa.json` are not copied into the refreshed archives: they describe an earlier processing stage. Record both the release tag and SHA-256 checksum when using a sample.
 
 Machine-readable provenance is provided in [`manifest.csv`](manifest.csv), including the city, category, dataset-relative event path, duration, size, checksum, parameter-set reference and release tag. Archive checksums are also in [`SHA256SUMS`](SHA256SUMS).
 
