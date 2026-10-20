@@ -2,6 +2,8 @@
 
 These files describe the validated TLCD 1.0 event inventory used by the manuscript figures and repository overview.
 
+The composition tables retain the current manuscript's reporting basis: 5,173 events, including 3,455 compliant events and 1,718 violations. They are manuscript-analysis outputs, not a new recount of all event files after subsequent annotation revisions. The road-test mileage and duration follow the manuscript table reproduced in [`DATASET_INFO.md`](../DATASET_INFO.md#collection-boundary).
+
 - `dataset_event_statistics.md`: event composition by city, category, provision, driving mode, and compliance label.
 - `scene_diversity_statistics.md`: primary event subtypes and non-exclusive contextual attributes.
 - `qa_summary.json`: machine-readable inventory and completeness checks.

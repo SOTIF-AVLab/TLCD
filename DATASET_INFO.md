@@ -10,10 +10,18 @@ The complete author-supplied Chinese field dictionary is mirrored in [`DatasetIn
 
 - Locations: highways and urban expressways in Nanjing and Changchun, China.
 - Collection period: 27 August–22 October 2024 in Changchun and 10 September–23 October 2024 in Nanjing.
-- Source road tests: 2,034.94 km and 35.18 h.
+- Source road tests: 2,034.94 km and 29.41 h, following the current manuscript.
 - Vehicle platform: FAW Hongqi EH7 engineering prototype equipped with an L3 autonomous-driving system.
 - Included observations: seven camera streams covering six directions, structured ego-vehicle states, up to 30 fused surrounding objects, and lane-level map information.
 - Excluded raw sensors: raw LiDAR, raw millimeter-wave radar, and raw GNSS/INS measurements.
+
+The mileage and duration below reproduce the manuscript's road-test table. They describe source road tests, not sums over overlapping event windows.
+
+| Collection site | Manual (km) | Autonomous (km) | Total (km) | Manual (h) | Autonomous (h) | Total (h) |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Nanjing | 776.33 | 573.81 | 1,350.14 | 11.34 | 8.36 | 19.70 |
+| Changchun | 51.01 | 633.79 | 684.80 | 1.73 | 7.98 | 9.71 |
+| Total | 827.34 | 1,207.60 | 2,034.94 | 13.07 | 16.34 | 29.41 |
 
 ## Directory layout
 

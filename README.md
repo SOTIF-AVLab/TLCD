@@ -12,7 +12,7 @@ TLCD 1.0 is an event-level, real-world driving dataset designed for research on 
 
 ## Highlights
 
-- **5,173 event records** from **2,034.94 km** and **35.18 h** of real-world road tests.
+- **5,173 event records** from **2,034.94 km** and **29.41 h** of real-world road tests.
 - **Two cities:** Nanjing and Changchun.
 - **Eight event categories:** maximum-speed limit, minimum-speed limit, following distance, lateral distance, lane change, continuous lane change, road-marking compliance, and overtaking.
 - **17 applicable legal provisions** represented by machine-executable monitoring logic.
@@ -23,7 +23,7 @@ TLCD 1.0 is an event-level, real-world driving dataset designed for research on 
 
 ## Dataset overview
 
-The composition tables retain the previously published statistics. This refresh updates the sample files and camera metadata; a revision of the full-dataset statistics is pending author confirmation.
+The overview and composition tables follow the current manuscript's reporting basis. They are not a new recount of all event files after subsequent annotation revisions.
 
 | Dimension | Value |
 | --- | ---: |
@@ -34,7 +34,9 @@ The composition tables retain the previously published statistics. This refresh 
 | Event categories | 8 |
 | Applicable legal provisions | 17 |
 | Road-test distance | 2,034.94 km |
-| Road-test duration | 35.18 h |
+| Road-test duration | 29.41 h |
+
+The manuscript's road-test totals comprise 827.34 km / 13.07 h of manual driving and 1,207.60 km / 16.34 h of autonomous driving. These describe the source road tests, not the summed duration of the released event windows. The city-level breakdown is in [`DATASET_INFO.md`](DATASET_INFO.md#collection-boundary).
 
 <div align="center">
   <img src="manuscript/figures/fig5.png" width="900" alt="TLCD event-level composition">

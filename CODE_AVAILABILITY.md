@@ -10,7 +10,7 @@ No API key is committed. The VLM review scripts read `QWEN_API_KEY` from the run
 
 The published VLM folder mirrors the category-specific programs located in the project source tree. Qwen-compatible review entry points are available for maximum speed, minimum speed, following distance, lane change, continuous lane change, and road marking; lateral distance uses a separate data-derived description/consistency pass. The supplied source tree did not contain a standalone Qwen review entry point for overtaking, and the repository does not claim or invent one.
 
-The `samples-v1.1` refresh updates data and documentation, not the historical processing implementation. The published video-conversion programs produce an earlier HEVC stage; the refreshed sample files are H.264/AVC. S7 outputs also precede final auxiliary-text cleanup and `camera_set_id` assignment. Final-stage code coverage is being reviewed; the existing scripts should not be interpreted as a complete one-command reconstruction of the refreshed files.
+The published video-conversion programs produce an earlier HEVC stage; the refreshed sample files are masked H.264/AVC. The video directory also provides the original utility for promoting already-masked videos into the released layout and a new standalone full-decoding checker for the current H.264 files. The face/plate detector and H.264 masking encoder have not yet been located in the supplied processing sources and are not included. See [`code/video_processing/README.md`](code/video_processing/README.md) for the exact boundaries and commands. S7 outputs also precede final auxiliary-text cleanup and `camera_set_id` assignment; those steps are outside this update. The package should not be interpreted as a complete one-command reconstruction of the refreshed files.
 
 ## Data Availability
 
@@ -25,5 +25,5 @@ The DOI, archived dataset record, and final dataset/software licences will be ad
 - 公开代码从 S5 开始，S1–S4 不属于论文定义的发布处理边界。
 - 公开样本为两座城市、八类事件各 1 条，共 16 条；`samples-v1.1` 已同步当前数据文件、H.264 视频及相机参数。
 - 完整数据继续通过指定邮箱申请，样本更新不等于全量公开。申请路径、邮件格式和审核主体保持不变。
-- 本轮更新数据与说明；最终字段整理、参数关联及最终视频处理代码的补充范围待确认。
+- 视频代码已补打码后发布目录整理工具和当前 H.264 完整解码核验工具；实际检测/打码编码程序尚未定位，不能声称已公开完整视频生成链。最终字段整理和参数关联代码本轮不变。
 - DOI 与数据/代码许可证尚未确定，因此文件中未虚构编号或许可证。
