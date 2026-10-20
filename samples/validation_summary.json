@@ -1,0 +1,53 @@
+{
+  "release_tag": "samples-v1.1",
+  "validated_at_utc": "2026-10-20T03:16:27+00:00",
+  "scope": "16 refreshed sample events only; not a new full-dataset audit",
+  "events": 16,
+  "structured_csv_files": 64,
+  "record_json_files": 16,
+  "fully_decoded_videos": 112,
+  "codec": "h264",
+  "frame_rate_fps": 30,
+  "all_decoded_frame_counts_match_round_30T": true,
+  "maximum_absolute_duration_error_s": 0.016666666666667496,
+  "all_csv_time_axes_match_with_0_01_s_steps": true,
+  "csv_coverage_notes": [
+    {
+      "event_path": "Changchun_valid/04_LateralDis/D-6.0-PP16-20240927_153657_282-20240927_154157_309_CSV/event_01",
+      "csv_first_event_time_s": 0.01,
+      "csv_last_event_time_s": 5.18,
+      "record_interval_s": 5.2,
+      "uncovered_start_s": 0.01,
+      "uncovered_end_s": 0.020000000000000462
+    },
+    {
+      "event_path": "Nanjing_valid/04_LateralDis/D-6.0-28-20240930_105931_446-20240930_110431_453_CSV/event_01",
+      "csv_first_event_time_s": 0.01,
+      "csv_last_event_time_s": 5.07,
+      "record_interval_s": 5.1,
+      "uncovered_start_s": 0.01,
+      "uncovered_end_s": 0.02999999999999936
+    }
+  ],
+  "all_sample_camera_set_references_resolve": true,
+  "parameter_sets": 7,
+  "camera_entries": 49,
+  "maximum_camera_transform_inverse_error": 2.220446049250313e-15,
+  "parameter_validation_scope": "Numeric consistency and sample references, not independent calibration accuracy",
+  "files": {
+    "camera_parameters.json": {
+      "sha256": "5eaa2f8b6dcf51970f41239ccd283ac4754e9f87ec042d1e3bd943f8b5dba638"
+    },
+    "DatasetInfo.md": {
+      "sha256": "9730d5663508f5f83ce000ebcbb9f9639255247cafa22d73f5ad418c8a0e3b4b"
+    },
+    "CAMERA_PARAMETERS.md": {
+      "sha256": "8fd66a39ec4b25a4c6fc4579bb604a9f6f2f79f84093ca3f27fa0bbe9fe23a89"
+    }
+  },
+  "archive_total_bytes": 1722781297,
+  "file_changes_against_samples_v1_0": {
+    ".json": 16,
+    ".mp4": 112
+  }
+}

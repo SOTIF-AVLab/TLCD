@@ -1,6 +1,8 @@
 # Video processing
 
-This directory contains only the code needed for the video version described in the current manuscript: seven camera views encoded as fixed-30-Hz HEVC streams in MP4 containers, with duration aligned to the event interval in `record.json`.
+This directory contains the historical extraction and fixed-frame-rate stage: seven camera views encoded as fixed-30-Hz HEVC streams in MP4 containers, with duration aligned to the event interval in `record.json`.
+
+The refreshed `samples-v1.1` videos are H.264/AVC files from the current dataset. The scripts below generate and audit the earlier HEVC stage and depend on its staging, backup and QA files. They do not implement the entire final-video processing chain and should not be run against the reduced current event layout without restoring their required inputs. Current sample validation is documented in [`samples/`](../../samples/).
 
 ## Pipeline
 

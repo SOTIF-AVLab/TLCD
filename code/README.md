@@ -5,7 +5,7 @@ This directory contains the custom code used after event-triggered acquisition t
 | Directory | Purpose |
 | --- | --- |
 | [`event_processing/`](event_processing/) | Generate the three structured CSV inputs, build `EvidenceChain.csv`, create `record.json`, and document historical correction scripts. |
-| [`video_processing/`](video_processing/) | Extract the seven camera streams and generate the released fixed-30-Hz HEVC/MP4 videos. |
+| [`video_processing/`](video_processing/) | Extract the seven camera streams and generate the historical fixed-30-Hz HEVC/MP4 stage; see its README for differences from current H.264 samples. |
 | [`vlm_review/`](vlm_review/) | Generate auxiliary scene descriptions and driving suggestions and flag questionable cases for manual review. |
 | [`validation/`](validation/) | Reproduce dataset statistics and run structural, temporal, and video-integrity checks. |
 

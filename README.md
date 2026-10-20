@@ -2,9 +2,9 @@
 
 **TLCD 1.0: A Traffic Law Compliance Dataset for Autonomous Vehicles Based on Legal Driving-Behavior Monitoring**
 
-[中文说明](README_zh-CN.md) · [Dataset documentation](DATASET_INFO.md) · [Code](code/) · [Samples](samples/) · [Manuscript materials](manuscript/) · [Statistics](statistics/)
+[中文说明](README_zh-CN.md) · [Dataset documentation](DATASET_INFO.md) · [Camera parameters](CAMERA_PARAMETERS.md) · [Code](code/) · [Samples](samples/) · [Manuscript materials](manuscript/) · [Statistics](statistics/)
 
-TLCD 1.0 is an event-level, real-world driving dataset designed for research on traffic-law compliance, autonomous-driving safety, behavior monitoring, and safety-oriented data mining. It was collected with a FAW Hongqi EH7 engineering vehicle on highways and urban expressways in Nanjing and Changchun, China.
+TLCD 1.0 is an event-level, real-world driving dataset designed for research on traffic-law compliance, autonomous-driving safety, behavior monitoring, and safety-oriented data mining. It was collected using the FAW Hongqi EH7 engineering-vehicle platform on highways and urban expressways in Nanjing and Changchun, China.
 
 <div align="center">
   <img src="manuscript/figures/fig1.png" width="780" alt="TLCD data-acquisition platform">
@@ -16,11 +16,14 @@ TLCD 1.0 is an event-level, real-world driving dataset designed for research on 
 - **Two cities:** Nanjing and Changchun.
 - **Eight event categories:** maximum-speed limit, minimum-speed limit, following distance, lateral distance, lane change, continuous lane change, road-marking compliance, and overtaking.
 - **17 applicable legal provisions** represented by machine-executable monitoring logic.
-- **Seven fixed-30-Hz HEVC/MP4 camera videos** covering six viewing directions, together with 100-Hz ego-vehicle, fused-object, map, evidence-chain, and event-summary data.
+- **Seven fixed-30-Hz H.264/AVC MP4 camera videos** covering six viewing directions, together with 100-Hz ego-vehicle, fused-object, map, evidence-chain, and event-summary data.
+- **Camera intrinsics, distortion coefficients and extrinsics** in seven parameter sets, selected by each event's `camera_set_id`.
 - Both **autonomous driving** and **manual driving** are represented.
 - Final event-level compliance labels were manually reviewed; VLM-generated descriptions and driving suggestions are auxiliary annotations and do not determine the labels.
 
 ## Dataset overview
+
+The composition tables retain the previously published statistics. This refresh updates the sample files and camera metadata; a revision of the full-dataset statistics is pending author confirmation.
 
 | Dimension | Value |
 | --- | ---: |
@@ -43,6 +46,8 @@ The platform integrates seven cameras, three LiDARs, five millimeter-wave radars
 
 The released dataset includes seven event videos generated from the original camera streams plus structured ego, object, map, evidence, and event-summary files. It does **not** include the original continuous camera recordings, raw LiDAR, raw radar, or raw GNSS/INS measurements.
 
+[`camera_parameters.json`](camera_parameters.json) provides the per-view geometry at the distributed video resolution. See [`CAMERA_PARAMETERS.md`](CAMERA_PARAMETERS.md) for parameter selection, coordinate conventions and usage conditions; the complete Chinese field dictionary is [`DatasetInfo.md`](DatasetInfo.md).
+
 ## Event categories
 
 | Category | Events | Compliant | Violation |
@@ -63,6 +68,9 @@ TLCD/
 ├── README.md
 ├── README_zh-CN.md
 ├── DATASET_INFO.md
+├── DatasetInfo.md       # Complete author-supplied Chinese field dictionary
+├── camera_parameters.json
+├── CAMERA_PARAMETERS.md # Camera lookup, geometry and use conditions
 ├── CODE_AVAILABILITY.md
 ├── code/                # Event, video, VLM-review, and validation code
 ├── samples/             # Sample-event manifest and release links
@@ -74,9 +82,9 @@ The primary processing chain begins at S5 because acquisition outputs were alrea
 
 ## Samples
 
-The GitHub sample release contains one complete event from each of the eight categories for each city (16 events in total). Every sample preserves the released structured files and seven final 30-Hz videos. See [`samples/README.md`](samples/README.md) for the manifest, checksums, and download instructions.
+The [`samples-v1.1`](https://github.com/SOTIF-AVLab/TLCD/releases/tag/samples-v1.1) release refreshes the same 16 city–category events from the current dataset. Every ZIP contains four CSV files, one current record JSON, seven 30-Hz H.264 videos, and the shared camera parameters and documentation. See [`samples/README.md`](samples/README.md) for the manifest, checksums, validation results and download instructions.
 
-Sample videos are an interim release and may be replaced by de-identified versions. Cite the release tag or asset checksum used in an analysis.
+Use `samples-v1.1` for the refreshed files; `samples-v1.0` identifies the previous preview. Cite the exact release tag and asset checksum used in an analysis. Updating the samples does not imply that the full dataset is publicly downloadable.
 
 ## Access
 
