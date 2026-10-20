@@ -12,6 +12,8 @@ Each ZIP archive preserves the dataset-relative path and contains:
 
 Each record now includes `camera_set_id`; use it with the included parameter JSON and the video's tag to select the appropriate intrinsics, distortion coefficients and extrinsics. Current `Result` objects contain `Compliance_label`, `Violation_reason`, `Scenario_description_VLM` and `Driving_suggestion_VLM`. The two VLM text fields are final English auxiliary annotations, including review and revision.
 
+The bundled dictionary includes the author-approved minimum-speed column-name corrections and collection/source-segment wording aligned with the manuscript, applied on 2026-10-20. This documentation-only revision does not change any event CSV, record JSON, video or camera parameter file. ZIP checksums and `FILES.sha256` reflect the updated dictionary.
+
 Historical H.265 backups and `video_cfr30_metadata/fixed_fps_qa.json` are not copied into the refreshed archives: they describe an earlier processing stage. Record both the release tag and SHA-256 checksum when using a sample.
 
 Machine-readable provenance is provided in [`manifest.csv`](manifest.csv), including the city, category, dataset-relative event path, duration, size, checksum, parameter-set reference and release tag. Archive checksums are also in [`SHA256SUMS`](SHA256SUMS).
@@ -27,6 +29,8 @@ Machine-readable provenance is provided in [`manifest.csv`](manifest.csv), inclu
 - numerical consistency of camera transforms and byte-for-byte verification of archived files against the source files read during packaging.
 
 These checks do not constitute a new full-dataset validation, a new assessment of annotation correctness, or an independent evaluation of calibration accuracy or video de-identification.
+
+The older metadata-only video report is explicitly marked historical; see the [technical-validation scope notes](../statistics/technical_validation/README.md). Its measurements should not be used to describe these refreshed sample videos.
 
 CSV endpoint coverage is preserved as supplied. For example, the Changchun lateral-distance sample has a 5.20-s JSON interval, while its matching CSV time axes span 0.01–5.18 s. The validation summary reports endpoint gaps exceeding one structured sampling interval; no samples are invented to fill those gaps.
 

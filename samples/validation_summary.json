@@ -2,6 +2,14 @@
   "release_tag": "samples-v1.1",
   "validated_at_utc": "2026-10-20T03:16:27+00:00",
   "scope": "16 refreshed sample events only; not a new full-dataset audit",
+  "documentation_revision": {
+    "date": "2026-10-20",
+    "description": "Author-approved minimum-speed column-name corrections and collection/source-segment wording aligned with the manuscript.",
+    "changed_zip_entries": ["DatasetInfo.md", "FILES.sha256"],
+    "all_event_csv_record_json_and_video_bytes_unchanged": true,
+    "camera_parameters_unchanged": true,
+    "archive_checksums_updated": true
+  },
   "events": 16,
   "structured_csv_files": 64,
   "record_json_files": 16,
@@ -39,13 +47,13 @@
       "sha256": "5eaa2f8b6dcf51970f41239ccd283ac4754e9f87ec042d1e3bd943f8b5dba638"
     },
     "DatasetInfo.md": {
-      "sha256": "9730d5663508f5f83ce000ebcbb9f9639255247cafa22d73f5ad418c8a0e3b4b"
+      "sha256": "846e1e96b56195ca4efccfd4cf44aea455d8451f93841fbfb34ecfcd4421c0de"
     },
     "CAMERA_PARAMETERS.md": {
       "sha256": "8fd66a39ec4b25a4c6fc4579bb604a9f6f2f79f84093ca3f27fa0bbe9fe23a89"
     }
   },
-  "archive_total_bytes": 1722781297,
+  "archive_total_bytes": 1722784689,
   "file_changes_against_samples_v1_0": {
     ".json": 16,
     ".mp4": 112

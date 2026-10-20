@@ -2,7 +2,8 @@
 
 ## 1. 总体介绍
 
-本数据集来源于车端采集的**连续行驶原始数据**（多传感器/车身/地图等时序信号）。在连续数据上运行**交通法规合规性监测算法**，以规则触发与判定结果为核心，将长序列切分、整理为可审计的**事件级合规性样本（event-level compliance events）**。每个事件样本对应一段明确的时间窗口，包含：
+本数据集采用论文所述的**在线监测与事件触发记录流程**。车端交通法规合规性监测模块处理连续输入的多传感器、车身和地图时序信号，并将候选事件的触发信息反馈给记录系统。记录系统维护滚动缓存，按事件边界回取触发前数据、继续采集触发后数据，保存对应事件时间窗内的同步数据。离线处理将已保存的事件数据转换为结构化输入、证据链与事件摘要；最终事件级合规标签经人工复核确定。每个发布样本以可审计的**事件级合规性记录（event-level compliance event）**为单元，包含：
+
 - **上游结构化输入**：EgoInfo / ObjInfo / MapInfo（车端原始输入信号在事件窗口内的裁剪与结构化表示）
 - **下游证据链输出**：EvidenceChain.csv（用于支撑判定结论的关键证据字段）
 - **事件摘要记录**：record.json（面向人工复核/审计的时间、法规条款、结论、原因与建议等摘要信息）
@@ -34,7 +35,7 @@
 - `<artifact>`：文件内容类型标识，包括 `EgoInfo` / `ObjInfo` / `MapInfo` / `EvidenceChain` / `record`。
 - `<ext>`：文件扩展名，`csv` 或 `json`。
 
-`segment` 定义：车端采集的连续行驶原始数据在落盘时以 5 min 为一个 `segment` 进行保存与处理；事件以 `segment` 分文件夹保存，与 `segment` 对应。
+`segment` 定义：用于组织事件并追溯来源的源记录分组。其目录名记录来源标识和该分组的起止时间，一个 `segment` 目录下可以包含一个或多个 `event_XX` 事件目录。`segment` 的时间范围不等于单个事件的时间窗，也不将事件时长固定为 5 min；单个事件的起止以对应 `record.json` 为准，CSV 中的 `event_time` 表示事件内相对时间。
 
 所有 CSV 统一包含 `event_time` 列，表示事件区间内的相对时间轴，且所有CSV统一插值处理为100 Hz 采样率。
 
@@ -206,16 +207,16 @@
 | 字段名 | 含义 | 单位 | 取值范围/枚举 | 缺失规则 |
 |---|---|---|---|---|
 | event_time | 事件相对时间轴 | s |  |  |
-| trigger_IMR_78.2 | IMR_78.2是否触发 | enum | {0:not-triggered, 1:trigger} | 0 |
-| trigger_IMR_78.4 | IMR_78.4是否触发 | enum | {0:not-triggered, 1:trigger} | 0 |
-| trigger_IMR_78.5 | IMR_78.5是否触发 | enum | {0:not-triggered, 1:trigger} | 0 |
-| trigger_IMR_78.6 | IMR_78.6是否触发 | enum | {0:not-triggered, 1:trigger} | 0 |
-| trigger_IMR_78.7 | IMR_78.7是否触发 | enum | {0:not-triggered, 1:trigger} | 0 |
-| com_IMR_78.2 | IMR_78.2是否违规 | enum | {0:not-triggered, 1:compliance, -1:violation} | 0 |
-| com_IMR_78.4 | IMR_78.4是否违规 | enum | {0:not-triggered, 1:compliance, -1:violation} | 0 |
-| com_IMR_78.5 | IMR_78.5是否违规 | enum | {0:not-triggered, 1:compliance, -1:violation} | 0 |
-| com_IMR_78.6 | IMR_78.6是否违规 | enum | {0:not-triggered, 1:compliance, -1:violation} | 0 |
-| com_IMR_78.7 | IMR_78.7是否违规 | enum | {0:not-triggered, 1:compliance, -1:violation} | 0 |
+| trigger_IMR_78_2 | IMR_78.2是否触发 | enum | {0:not-triggered, 1:trigger} | 0 |
+| trigger_IMR_78_4 | IMR_78.4是否触发 | enum | {0:not-triggered, 1:trigger} | 0 |
+| trigger_IMR_78_5 | IMR_78.5是否触发 | enum | {0:not-triggered, 1:trigger} | 0 |
+| trigger_IMR_78_6 | IMR_78.6是否触发 | enum | {0:not-triggered, 1:trigger} | 0 |
+| trigger_IMR_78_7 | IMR_78.7是否触发 | enum | {0:not-triggered, 1:trigger} | 0 |
+| com_IMR_78_2 | IMR_78.2是否违规 | enum | {0:not-triggered, 1:compliance, -1:violation} | 0 |
+| com_IMR_78_4 | IMR_78.4是否违规 | enum | {0:not-triggered, 1:compliance, -1:violation} | 0 |
+| com_IMR_78_5 | IMR_78.5是否违规 | enum | {0:not-triggered, 1:compliance, -1:violation} | 0 |
+| com_IMR_78_6 | IMR_78.6是否违规 | enum | {0:not-triggered, 1:compliance, -1:violation} | 0 |
+| com_IMR_78_7 | IMR_78.7是否违规 | enum | {0:not-triggered, 1:compliance, -1:violation} | 0 |
 | Road_type | 自车所在道路类型 | enum | 见A3.1 | 0 |
 | Lane_type | 自车所在车道类型 | enum | 见A3.1 | 0 |
 | Ego_velocity | 自车车速 | m/s |  | -1 |

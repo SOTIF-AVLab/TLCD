@@ -4,7 +4,7 @@
 
 TLCD 1.0 is organized around traffic-law-related driving events rather than complete trips. Each released event is a synchronized temporal window containing camera streams, structured vehicle/environment signals, a machine-readable evidence chain, and a reviewed event-level result.
 
-The complete author-supplied Chinese field dictionary is mirrored in [`DatasetInfo.md`](DatasetInfo.md). Camera parameters are provided in [`camera_parameters.json`](camera_parameters.json), with an English usage guide in [`CAMERA_PARAMETERS.md`](CAMERA_PARAMETERS.md). The dictionary and parameter JSON are copied unchanged from the current dataset root.
+The complete Chinese field dictionary is provided in [`DatasetInfo.md`](DatasetInfo.md). It follows the author-supplied dataset dictionary, with approved corrections to minimum-speed CSV column names and collection/source-segment wording aligned with the current manuscript. These documentation corrections do not change the event data. Camera parameters are provided unchanged from the dataset root in [`camera_parameters.json`](camera_parameters.json), with an English usage guide in [`CAMERA_PARAMETERS.md`](CAMERA_PARAMETERS.md).
 
 ## Collection boundary
 
@@ -82,7 +82,7 @@ This establishes event-window and playback-duration alignment, not independently
 
 ## Field dictionary notes
 
-The mirrored `DatasetInfo.md` documents variable units, missing-value codes, object and lane fields, category-specific evidence, JSON summaries and camera geometry. Exact column names should be read from the released CSV headers: minimum-speed columns use underscores (for example, `trigger_IMR_78_2`), although the supplied dictionary still spells some of them with a dot. Regulation identifiers such as `IMR_78.2` remain distinct from CSV column names. The dictionary's monitor definitions also include reserved provisions not present in the released records' `Article.ID` values; these should not be counted as additional observed provisions.
+`DatasetInfo.md` documents variable units, missing-value codes, object and lane fields, category-specific evidence, JSON summaries and camera geometry. Minimum-speed column names have been corrected to match the released CSV headers and the underscore convention used by the other categories (for example, `trigger_IMR_78_2`). Regulation identifiers such as `IMR_78.2` remain distinct from CSV column names. The dictionary's monitor definitions also include reserved provisions not present in the released records' `Article.ID` values; these should not be counted as additional observed provisions.
 
 ## Event-window construction
 

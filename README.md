@@ -118,6 +118,8 @@ Custom code used to construct and validate the released dataset is available in 
 
 Detailed checks are available in [statistics/dataset_event_statistics.md](statistics/dataset_event_statistics.md).
 
+Current video validation covers all 112 videos in the 16 public samples: complete decoding passed, with a maximum event-window duration difference of 0.0166667 s. This is not a new full-dataset audit. The older metadata-only video report is marked historical; see the [video-report scope notes](statistics/technical_validation/README.md).
+
 ## Citation
 
 The TLCD manuscript is in preparation. A complete dataset citation, DOI, and BibTeX entry will be added after archival release. Until then, please cite this repository and include the accessed version or commit.

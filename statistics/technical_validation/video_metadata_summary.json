@@ -1,4 +1,15 @@
 {
+  "report_context": {
+    "status": "historical_metadata_probe",
+    "annotated_on": "2026-10-20",
+    "scope": "Historical 5,173-event snapshot preceding the current sample refresh; exact source-build identifier was not recorded in this report.",
+    "method": "Metadata probing only, not complete video decoding. Zero decode-error counters do not demonstrate successful full decoding in probe mode.",
+    "applies_to_current_sample_videos": false,
+    "original_measurements_preserved": true,
+    "current_sample_validation": "../../samples/validation_summary.json",
+    "current_sample_video_details": "../../samples/video_validation.csv",
+    "final_dataset_full_decode_status": "A new full-decoding audit of all 36,211 final videos was not performed during the 2026-10-20 repository update."
+  },
   "mode": "probe",
   "events_in_event_audit": 5173,
   "events_omitted_without_complete_video_set": [],
