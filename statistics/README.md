@@ -9,6 +9,6 @@ The composition tables retain the current manuscript's reporting basis: 5,173 ev
 - `qa_summary.json`: machine-readable inventory and completeness checks.
 - `01_city_article.csv`–`04_category_combination.csv`: compact tables used to generate the dataset-composition figure.
 - `scene_diversity/`: compact subtype and contextual-label tables used to reproduce the scene-diversity figure.
-- [`technical_validation/`](technical_validation/): scope notes for historical reports and links to the current 16-event sample validation. The historical video metadata probe is not a report on the current final videos.
+- [`technical_validation/`](technical_validation/): technical-validation reports and an explanation of the video checks covering the 16 public sample events.
 
 Statistics count each valid `record.json` as one event record. When an event applies to multiple legal provisions, provision-level tables count one event–provision pair per applicable provision.

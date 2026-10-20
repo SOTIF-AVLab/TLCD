@@ -17,4 +17,4 @@ python validate_dataset_integrity.py --dataset-root "$TLCD_DATASET_ROOT"
 
 Published aggregate outputs are stored in [`../../statistics/`](../../statistics/). Figure-rendering programs are intentionally not included in the public code package.
 
-For the current reduced H.264 event layout, use [`../video_processing/audit_final_videos.py`](../video_processing/audit_final_videos.py) and its documented environment. The previously published `video_metadata_summary.json` is a historical metadata-only probe, not full decoding of the current release. See the [report-scope notes](../../statistics/technical_validation/README.md) and [current sample results](../../samples/validation_summary.json).
+For the current reduced H.264 event layout, use [`../video_processing/audit_final_videos.py`](../video_processing/audit_final_videos.py) and its documented environment. See the [video-validation details](../../statistics/technical_validation/README.md) and [sample results](../../samples/validation_summary.json), which cover the 16 public sample events.

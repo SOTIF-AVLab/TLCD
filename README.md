@@ -118,7 +118,7 @@ Custom code used to construct and validate the released dataset is available in 
 
 Detailed checks are available in [statistics/dataset_event_statistics.md](statistics/dataset_event_statistics.md).
 
-Current video validation covers all 112 videos in the 16 public samples: complete decoding passed, with a maximum event-window duration difference of 0.0166667 s. This is not a new full-dataset audit. The older metadata-only video report is marked historical; see the [video-report scope notes](statistics/technical_validation/README.md).
+Video validation covers all 112 videos in the 16 public samples: complete decoding passed, with a maximum event-window duration difference of 0.0166667 s. These results apply to the public samples, not the complete dataset; see the [video-validation details](statistics/technical_validation/README.md).
 
 ## Citation
 

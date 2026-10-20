@@ -30,7 +30,7 @@ Machine-readable provenance is provided in [`manifest.csv`](manifest.csv), inclu
 
 These checks do not constitute a new full-dataset validation, a new assessment of annotation correctness, or an independent evaluation of calibration accuracy or video de-identification.
 
-The older metadata-only video report is explicitly marked historical; see the [technical-validation scope notes](../statistics/technical_validation/README.md). Its measurements should not be used to describe these refreshed sample videos.
+See the [video-validation details](../statistics/technical_validation/README.md) for the decoding results and the checker used.
 
 CSV endpoint coverage is preserved as supplied. For example, the Changchun lateral-distance sample has a 5.20-s JSON interval, while its matching CSV time axes span 0.01–5.18 s. The validation summary reports endpoint gaps exceeding one structured sampling interval; no samples are invented to fill those gaps.
 
